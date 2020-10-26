@@ -1,0 +1,28 @@
+[user]
+	name = Mehmet Ali Gozaydin
+	email = mehmet.goezaydin@deliveryhero.com
+[alias]
+	st = status
+	br = branch
+	co = checkout
+	po = pull origin
+	mit = commit -a
+	amend = commit --amend
+	pr = ! sh -c 'git push origin `git rev-parse --abbrev-ref HEAD`'
+	prf = ! sh -c 'git push -f origin `git rev-parse --abbrev-ref HEAD`'
+	at = status
+[color]
+	ui = true
+[core]
+	excludesfile = /home/kubudi/.gitignore_global
+[branch]
+	autosetuprebase = always
+[pager]
+	branch = false
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[gui]
+	recentrepo = /Users/m.goezaydin/codebase/dh/logistics-assignment

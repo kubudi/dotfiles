@@ -1,0 +1,3 @@
+{
+  "cmd": ["scala", "$file_path/$file_name"]
+}
